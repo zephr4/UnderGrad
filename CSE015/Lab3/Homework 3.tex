@@ -1,0 +1,105 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin= 1in]{geometry}
+\usepackage{amsmath}
+\title{Homework 2}
+\author{Andy Alvarenga}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item
+P is a Knight and Q is a Knave.\\
+There are four potential cases:\\
+\begin{enumerate}
+\item $P = $knight and $Q = $knight
+\item $P = $knave and $Q = $knight
+\item $P = $knight and $Q = $knave
+\item $P = $knave and $Q = $knave
+\end{enumerate}
+Case 1 is impossible beacuse if P is a knight then Q must be a knave.\\
+In cases 2 and 4, if P is a knave, then what he says is untrue, therefore they are impossible.\\
+This leaves only case 3, which is the only possible combination because if P is a knight then Q must be a knave since knights do not lie.\\
+
+\item
+A is Knave and B is a Knight.\\
+There are four potential cases:\\
+\begin{enumerate}
+\item $A = $knight and $B = $knight
+\item $A = $knave and $B = $knight
+\item $A = $knight and $B = $knave
+\item $A = $knace and $B = $knave
+\end{enumerate}
+Case 1 and 3 are impossible because if A is a knight, then whatever he says is true.\\
+Case 4 is impossible because if B is a knave, he always lies.\\
+Therefore, case 2 is the only possible combination. If A is knave then B must be a knight.\\
+\end{enumerate}
+
+\section{Logical Identities} 
+
+\begin{enumerate}
+\item 
+$\neg(p \rightarrow (q \rightarrow p))$\\
+~=~$\neg p \rightarrow  \neg(q \rightarrow p)$\\
+~=~$\neg p \rightarrow (\neg q \rightarrow \neg p)$\\
+
+\item
+$\neg((p \land q) \rightarrow (q \lor p))$\\
+~=~$\neg(p \land q) \rightarrow \neg(q \lor p)$\\
+~=~$(\neg p \lor \neg q) \rightarrow (\neg q \land \neg p)$\\
+\end{enumerate}
+
+\section{Logical Equivilances}
+
+\begin{enumerate}
+\item
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $p \to (q \to r)$ & $(p \land q) \to r$ & $(p \to (q \to r)) \leftrightarrow  ((p \land q) \to r)$ \\
+\hline
+0 & 0 & 0 & 1 & 1 & 1 \\
+0 & 0 & 1 & 1 & 1 & 1 \\
+0 & 1 & 0 & 1 & 1 & 1 \\
+0 & 1 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 1 & 1 & 1 \\
+1 & 0 & 1 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\newline
+The propositional statements are equivilant beacause the final column of the truth table recieves a value of one for all cases, meaning $(p \to (q \to r)) \leftrightarrow  ((p \land q) \to r)$ is always true. Therefore, the pair is equivilant.
+
+\item
+\begin{tabular}{|c|c|c|c|c|c|}
+\hline
+$p$ & $q$ & $r$ & $p \to (q \to r)$ & $(p \to q) \to r$ & $(p \to (q \to r)) \leftrightarrow ((p \to q) \to r)$ \\
+\hline
+0 & 0 & 0 & 1 & 0 & 0 \\
+0 & 0 & 1 & 1 & 1 & 1 \\
+0 & 1 & 0 & 1 & 0 & 0 \\
+0 & 1 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 1 & 1 & 1 \\
+1 & 0 & 1 & 1 & 1 & 1 \\
+1 & 1 & 0 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 & 1 \\
+\hline
+\end{tabular}
+\newline
+The propositional statements are not equivilant beacuse the final column of the truth table, $(p \to (q \to r)) \leftrightarrow ((p \to q) \to r)$, does not recieve a value of one for all cases.
+\end{enumerate}
+
+\section{Logical Consequence}
+
+\begin{enumerate}
+\item
+This is a valid argument because we have no way of knowing if the conclusion is false or not.
+\item
+This is a valid argument since Puerto Rico is surrounded by water and since all islands are surrounded by water, then Puerto Rico must be an island.
+\end{enumerate}
+
+\section{Collaboration}
+Alberc Ej Salcedo and Spencer Tang
+\end{document}

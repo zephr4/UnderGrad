@@ -1,0 +1,101 @@
+\documentclass[11pt]{article}
+\begin{document}
+
+\title{Homework 4}
+\author{Andy Alvarenga}
+\date{\today}
+\maketitle
+
+\section{Mathematical Proofs}
+
+\begin{enumerate}
+
+\item
+\textbf{The sum of two odd integers is even.}\\
+Suppose n is an odd number represented by $2n + 1$.\\
+The sum of n + n,  $(2n+1)+(2n+1)=4n+2=2(n+1)$, is divisible by two.\\
+Therefore, the sum of two odd integers is even.\\
+
+\item
+\textbf{The sum of two even integers is even.}\\
+Suppose n is an even number, $2n$.\\
+The sum of n + n,  $2n+2n=4n=2(2n)$, is divisible by two.\\
+Therefore, the sum, n + n, is even.\\
+
+\item
+\textbf{The square of an even number is even.}\\
+Suppose n is an even number, $2n$.\\
+The square of n, $(2n)(2n)=4n^2=2(2n^2)$, is divisble by two.\\
+Therefore, the dquare of an even number is even.\\
+
+\item
+\textbf{The product of two odd integers is odd.}\\
+Suppose n is an odd number represented by $2n + 1$.\\
+The product n $*$ n is  $(2n+1)(2n+1)=4n^2+4n+1=2(2n^2+2n)+1$.\\
+If divided by two, there is a remainder of one. \\
+Therefore, the product of two odd integers is odd.\\
+
+\item
+\textbf{If  $n^3+5$ is odd then $n$ is even.}\\
+Proof by Contraposition:\\
+There is a contraposition when -q $\rightarrow$ -p when is p $\rightarrow$ q.\\
+P is an integer n and $(n^3+5)$ is odd.\\
+-P is integer n and  $(n^3+5)$ is odd.\\
+Therefore, q is an even integer n and -q is an odd integer n.\\
+
+\item
+\textbf{If $3n+2$ is even then $n$ is even.}\\
+Proof by Contrapostion:\\
+Suppose n, $n=2x+1$, is not even.\\
+Then, $3n+2=3(2a+1)+2=6a+5$; there is no value that will make $6a+5$ even.\\
+Therefore, then $3n+2$ is not even.\\
+
+\item
+\textbf{The sum of a rational number and an irrational is irrational.}\\
+Suppose $n$ is irrational.\\
+$n=(x/y)-(u/v)=(xu-yv)/yv$ so n is rational.\\
+Therefore, the statement is not true.\\
+
+\item
+\textbf{The product of two irrational numbers is irrational.}\\
+Suppose n is the product, x is an irrational number, and y is a rational number.\\
+$n=x/y$ by that n can be written as $(x/1)(1/y)$, which are both rational numbers.\\
+Therefore, the statement is correct.\\
+
+\end{enumerate}
+
+\section{Basic Counting Principles}
+
+\begin{enumerate}
+
+\item
+\textbf{How many different three-letter initials can people have.}\\
+Since there are 26 letters in the alphabet, $(26)(26)(26)=17576$.\\
+There is 17576 different combinations of three-letter initials.\\
+
+\item
+\textbf{How many different arrangements of the English alphabet are there?}\\
+Since there are 2 letters in the alphabet.\\
+The first arrangement contains 26 letters, the next contains 26 - 1 letters, the third 26 - 2, and so forth.\\
+Therefore, there 26! posiible arrangements of letters.\\ 
+
+\item
+\textbf{There are 18 mathematics majors and 325 computer science majors at a college. In how many ways can two representatives be picked so that one is a mathematics major and the other is a computer science major?}\\
+Since one must be a math major and the other a computer science major, there is $(18(325)=5850$ different possibilities.\\
+
+\item
+\textbf{A particular brand of shirt comes in 12 colors, has a male version and a female version, and comes in three sizes for each sex.  How many different types of this shirt are made?}\\
+There is $12x3=36$ different types of shirts for men and $12x3=36$ different types of shirts for women.\\
+Therefore, there 72 different types of shirts.\\
+
+\item
+\textbf{A multiple-choice test contains 10 questions.  There are four possible answers for each question.  In how many ways can a student answer the questions on the test if the student answers every question?}\\
+Since there are four possible answers for each question, there is $4^{10}=1,048,576$ ways for a student to answer.\\
+
+\item
+\textbf{Suppose we have the same multiple choice test as described in question 5, but we relax the assumption that the student has to answer all questions.  In other words, how many ways are there for a student answer the questions on the test if the student can leave answers blank?}\\
+Since there are four possible answers for each question, there is $4^{10}=1,048,576$ ways for a student to answer.\\
+However since the student may leave answers blank, there is $1,048,576 + 10 = 1,048,586$ possibilities for students to answer the questions.\\ 
+\end{enumerate}
+
+\end{document}
