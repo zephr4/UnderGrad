@@ -1,0 +1,77 @@
+.data
+	n: .word 25
+	str1: .asciiz "Lesss than\n"
+	str2: .asciiz "Less than or equal to\n"
+	str3: .asciiz " Greater than\n"
+	str4: .asciiz "Greater than or equal to\n"
+	ans: .asciiz "Enter a number: "
+	
+.text
+	la $t1, n
+	lw $t1, 0($t1)
+	li $v0, 4
+	la $a0, ans
+	syscall
+	li $v0, 5
+	syscall
+	move $t0, $v0
+	
+	#Less than
+#	slt $s0, $t0, $t1
+#	bne $s0, $zero, LessT
+#	beq $s0 $zero, a
+	
+#	li $v0, 10
+#	syscall
+	
+#LessT:	li $v0, 4
+#	la $a0, str1
+#	syscall
+	
+	#Greater than or equal to
+#a:	beq $t0, $t1, gte1
+#	bne $t0, $t1, gte1
+
+#gte1:	slt $s0, $zero, $t1
+#	beq $s0, $zero, gte2
+	
+#	li $v0, 10
+#	syscall
+	
+#gte2:	li $v0, 4
+#	la $a0, str4
+#	syscall
+	
+	#Greater than
+GT1: 	slt $s0, $t0, $t1
+	beq $s0, $zero, GT2
+	bne $s0, $zero, lte1
+	
+	li $v0, 10
+	syscall
+	
+GT2:	li $v0, 4
+	la $a0, str3
+	syscall
+	
+	#Less than or equal to
+lte1:	beq $t0, $t1, lte2
+	bne $t0, $t1, lte2
+	
+lte2:	slt $s0, $t0, $t1
+	bne $s0, $zero, lte3
+	
+	li $v0, 10
+	syscall
+	
+lte3:	li $v0, 4
+	la $a0, str2
+	syscall
+
+	
+	
+	
+	
+	
+	
+	
